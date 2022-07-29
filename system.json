@@ -1,0 +1,29 @@
+{
+	"name": "tutorial-fs2e",
+	"title": "Tutorial - Feng Shui 2",
+	"description": "A system for playing Feng Shui 2 games. Following the Tutorial: https://www.youtube.com/watch?v=gcSN4AQcUzM&list=PLFV9z59nkHDccUbRXVt623UdloPTclIrz",
+	"author": "Koella",
+	"version": "0.0.1",
+	"minimumCoreVersion": "9.269",
+	"compatibleCoreVersion": "9",
+	"esmodules": [
+		"fs2e.js"
+	],
+	"styles": [
+		"fs2e.css"
+	],
+	"packs": [
+	
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"gridDistance": 5,
+	"gridUnits": "ft",
+	"primaryTokenAttribute": "wounds",
+	"initiative": "1d6 + @speed"
+}

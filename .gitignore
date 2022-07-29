@@ -1,0 +1,8 @@
+# IDE
+.vscode/
+
+# Foundry Core
+app/
+
+# Gulp
+node_modules/
