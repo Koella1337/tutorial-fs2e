@@ -10,3 +10,68 @@
 .fs2e.sheet.item .sheet-content .editor {
   height: 100%;
 }
+.fs2e.sheet.namedCharacter .sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fs2e.sheet.namedCharacter h1 {
+  text-align: center;
+}
+.fs2e.sheet.namedCharacter .actor-img {
+  width: 256px;
+}
+.fs2e.sheet.namedCharacter input {
+  width: 100%;
+}
+.fs2e.sheet.namedCharacter select {
+  border: none;
+  text-align: center;
+}
+.fs2e.sheet.namedCharacter .wealth {
+  text-align: center;
+}
+.fs2e .weapon-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+}
+.fs2e .weapon-card .weapon-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+}
+.fs2e .weapon-card .weapon-name {
+  width: 70%;
+}
+.fs2e .weapon-card .weapon-stats {
+  width: 30%;
+  flex-direction: column;
+}
+.fs2e .weapon-card .weapon-effects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.fs2e .weapon-card .weapon-effects img {
+  border: none;
+}
+.fs2e.sheet.namedCharacter .stat-block {
+  text-align: center;
+  text-align-last: center;
+  align-items: center;
+}
+.fs2e.sheet.namedCharacter .backup-attack {
+  display: flex;
+  flex-direction: row;
+}
+.fs2e.sheet.namedCharacter select {
+  font-size: 1em;
+}
+.fs2e.sheet.namedCharacter input {
+  border: none;
+  margin-bottom: 0.25em;
+}

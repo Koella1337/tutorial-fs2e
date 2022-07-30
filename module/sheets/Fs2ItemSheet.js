@@ -10,7 +10,7 @@ export default class Fs2ItemSheet extends ItemSheet {
 
 	get template() {
 		const path = "systems/tutorial-fs2e/templates/items";
-		return `${path}/${this.item.data.type}.html`
+		return `${path}/${this.item.data.type}.hbs`
 	}
 
 	async getData(options) {
@@ -18,7 +18,6 @@ export default class Fs2ItemSheet extends ItemSheet {
 		const itemData = data.data;
 		data.item = itemData;
 		data.data = itemData.data;
-
 		data.config = CONFIG.fs2e;
 		return data;
 	}

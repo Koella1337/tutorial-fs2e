@@ -1,0 +1,20 @@
+<div class="weapon-card">
+	<div class="weapon-info weapon-name">
+		<p>{{name}}</p>
+	</div>
+	<div class="weapon-info weapon-stats">
+		<p>
+			{{data.damage}}/{{data.concealment}}/{{#if data.reload}}{{data.reload}}{{else}}-{{/if}}
+		</p>
+
+		<div class="weapon-effects">
+			{{#if data.pumpAction}}
+			<img src="systems/tutorial-fs2e/icons/weapon_effects/pump_action.png" height="32">
+			{{/if}}
+
+			{{#times data.mookBonus}}
+			<img src="systems/tutorial-fs2e/icons/weapon_effects/skull.png" height="32"/>
+			{{/times}}
+		</div>
+	</div>
+</div>

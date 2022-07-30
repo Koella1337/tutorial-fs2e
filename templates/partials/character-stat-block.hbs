@@ -1,0 +1,68 @@
+<section class="stat-block">
+	<label>
+		<h3>
+			<select name="data.attackPrimary.name" class="stat-name">
+				{{#select data.attackPrimary.name}}
+				{{#each config.attackTypes as |name type|}}
+				<option value="{{type}}">{{localize name}}</option>
+				{{/each}}
+				{{/select}}
+			</select>
+		</h3>
+	</label>
+	<div class="stat-value">
+		<input name="data.attackPrimary.value" type="text" value="{{data.attackPrimary.value}}" data-dtype="Number" />
+	</div>
+
+	<label class="stat-name">
+		<h3>{{localize "fs2e.stats.backupAttack"}}</h3>
+	</label>
+	<div class="stat-value backup-attack">
+		<select name="data.attackBackup.name" class="secondary-attack-selector">
+			{{#select data.attackBackup.name}}
+			{{#each config.attackTypes as |name type|}}
+			<option value="{{type}}">{{localize name}}</option>
+			{{/each}}
+			{{/select}}
+		</select>
+		<input name="data.attackBackup.value" type="text" value="{{data.attackBackup.value}}" data-dtype="Number" />
+	</div>
+
+	<label class="stat-name">
+		<h3>{{localize "fs2e.stats.defense"}}</h3>
+	</label>
+	<div class="stat-value">
+		<input name="data.defense" type="text" value="{{data.defense}}" data-dtype="Number"/>
+	</div>
+
+	<label class="stat-name">
+		<h3>{{localize "fs2e.stats.toughness"}}</h3>
+	</label>
+	<div class="stat-value">
+		<input name="data.toughness" type="text" value="{{data.toughness}}" data-dtype="Number"/>
+	</div>
+
+	{{#if (eq actor.type "hero")}}
+	<label>
+		<h3>
+			<select name="data.fortune.name" class="stat-name">
+				{{#select data.fortune.name}}
+				{{#each config.fortuneTypes as |name type|}}
+				<option value="{{type}}">{{localize name}}</option>
+				{{/each}}
+				{{/select}}
+			</select>
+		</h3>
+	</label>
+	<div class="stat-value">
+		<input name="data.fortune.value" type="text" value="{{data.fortune.value}}" data-dtype="Number"/>
+	</div>
+	{{/if}}
+
+	<label class="stat-name">
+		<h3>{{localize "fs2e.stats.speed"}}</h3>
+	</label>
+	<div class="stat-value">
+		<input name="data.speed" type="text" value="{{data.speed}}" data-dtype="Number"/>
+	</div>
+</section>

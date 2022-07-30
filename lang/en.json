@@ -1,7 +1,6 @@
 {
 	"fs2e": {
 		"attack": {
-			"none": "",
 			"guns": "Guns",
 			"martialArts": "Martial Arts",
 			"sorcery": "Sorcery",
@@ -16,6 +15,15 @@
 			"reload": "Reload",
 			"mookBonus": "Bonus vs Mooks",
 			"pumpAction": "Pump Action?"
+		},
+		"stats": {
+			"backupAttack": "Backup Attack",
+			"defense": "Defense",
+			"toughness": "Toughness",
+			"speed": "Speed"
+		},
+		"wealth": {
+			"label": "Wealth"
 		}
 	}
 }
